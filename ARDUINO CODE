@@ -1,0 +1,30 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
+
+int buttonPin = 8;
+int buttonState;
+int lastButtonState = HIGH;
+int count = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP);   
+  lcd.begin(16, 2);
+  lcd.print("Button Counter");
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  // Button pressed (HIGH → LOW)
+  if (buttonState == LOW && lastButtonState == HIGH) {
+    count++;
+    lcd.setCursor(0, 1);
+    lcd.print("Count: ");
+    lcd.print(count);
+    lcd.print("   ");   
+    delay(200);          
+  }
+
+  lastButtonState = buttonState;
+}
