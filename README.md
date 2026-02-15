@@ -32,3 +32,5 @@ Sports and fitness: Think of lap counters in swimming or step counters in fitnes
 Consumer electronics: Remote controls, calculators, and gaming consoles all rely on button press counters internally to make sure every press is registered.
 
 OUTPUT:
+
+<img width="1866" height="983" alt="Image" src="https://github.com/user-attachments/assets/9f58e39c-ecec-46f2-954f-4c37f9a40c3f" />
